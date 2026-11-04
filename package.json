@@ -1,0 +1,24 @@
+{
+  "name": "pwd_tp1_makenty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "watch": "sass --watch src/styles/main.scss dist/styles/main.min.css --style compressed"
+   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdmjc/pwd_tp1_makenty.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mdmjc/pwd_tp1_makenty/issues"
+  },
+  "homepage": "https://github.com/mdmjc/pwd_tp1_makenty#readme",
+  "devDependencies": {
+    "sass": "^1.107.1"
+  }
+}
