@@ -199,20 +199,20 @@ html, body {
   background-color: #333; // Fond sombre si l'image prend du temps à charger
 }
 
-// liens vers les images
-.tile-ducobu      { .tile-img { background-image: url('../../images/ducobu.jpg'); } }
-.tile-conjuring   { .tile-img { background-image: url('../../images/conjuring.jpg'); } }
-.tile-abigail     { .tile-img { background-image: url('../../images/abigail.jpg'); } }
-.tile-ducobupres  { .tile-img { background-image: url('../../images/ducobupres.jpg'); } }
-.tile-evades      { .tile-img { background-image: url('../../images/evades.jpg'); } }
-.tile-crocodiles  { .tile-img { background-image: url('../../images/crocodiles.jpg'); } }
+    // liens vers les images
+    .tile-ducobu      { .tile-img { background-image: url('../../images/ducobu.jpg'); } }
+    .tile-conjuring   { .tile-img { background-image: url('../../images/conjuring.jpg'); } }
+    .tile-abigail     { .tile-img { background-image: url('../../images/abigail.jpg'); } }
+    .tile-ducobupres  { .tile-img { background-image: url('../../images/ducobupres.jpg'); } }
+    .tile-evades      { .tile-img { background-image: url('../../images/evades.jpg'); } }
+    .tile-crocodiles  { .tile-img { background-image: url('../../images/crocodiles.jpg'); } }
 
-.tile-got         { .tile-img { background-image: url('../../images/got.jpg'); } }
-.tile-murder      { .tile-img { background-image: url('../../images/murder.jpg'); } }
-.tile-prisonbreak { .tile-img { background-image: url('../../images/prisonbreak.jpg'); } }
-.tile-the100      { .tile-img { background-image: url('../../images/the100.jpg'); } }
-.tile-suits       { .tile-img { background-image: url('../../images/suits.jpg'); } }
-.tile-bridgerton  { .tile-img { background-image: url('../../images/bridgerton.jpg'); } }
+    .tile-got         { .tile-img { background-image: url('../../images/got.jpg'); } }
+    .tile-murder      { .tile-img { background-image: url('../../images/murder.jpg'); } }
+    .tile-prisonbreak { .tile-img { background-image: url('../../images/prisonbreak.jpg'); } }
+    .tile-the100      { .tile-img { background-image: url('../../images/the100.jpg'); } }
+    .tile-suits       { .tile-img { background-image: url('../../images/suits.jpg'); } }
+    .tile-bridgerton  { .tile-img { background-image: url('../../images/bridgerton.jpg'); } }
 
 
 // Zone de texte sous l'image
@@ -248,7 +248,7 @@ html, body {
 // On cible les écrans de moins de 768px 
 @media (max-width: 48rem) { // 48rem = 768px
   
-  // Refonte de la grille globale : une seule colonne empilée
+  // la grille globale devient une seule colonne empilée
   .grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
@@ -279,32 +279,23 @@ html, body {
     gap: 1rem;
   }
 
+
   // Chaque tuile prend toute la largeur sur mobile
   .tile {
     width: 100%;
     min-width: 100%;
-    position: relative; // Indispensable pour l'étape 15
   }
 
-  // [Bloc 14] Réduction de la hauteur de l'affiche et masquage textuel
+  // Réduction de la hauteur de l'affiche et masquage textuel
   .tile-img {
     height: 14rem; // Plus compact pour le défilement sur téléphone
-  }
+    pointer-events: auto; // permet de cliquer sur l'image
+}
 
   .tile-info {
     display: none; // Le nom du film et le lien disparaissent complètement !
   }
-
-  // Toute l'affiche devient cliquable de manière transparente
-  .tile::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-  }
 }
+
 
 
