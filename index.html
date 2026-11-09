@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes Films et Séries Préférés</title>
-    <!-- On pointe déjà vers le futur fichier CSS compilé et minifié -->
+    <link rel="stylesheet" href="https://cloudflare.com">
     <link rel="stylesheet" href="dist/styles/main.min.css">
 </head>
 <body>
 
-    <!-- Conteneur principal qui servira pour la grille CSS Grid -->
+    <!-- Conteneur principal -->
     <div class="grid-container">
 
         <!-- Bloc 1 : Le bandeau titre -->
@@ -17,17 +17,18 @@
             <h1>Cinéma & Séries : Mes Favoris</h1>
         </header>
 
-                     <!-- Bloc 2 : Le menu de gauche -->
-        <nav class="side-menu">
-            <h2>Liens Utiles</h2>
-            <ul>
-                <li><a href="https://allocine.fr" target="_blank"><span class="icon icon-allocine"></span>AlloCiné</a></li>
-                <li><a href="https://imdb.com" target="_blank"><span class="icon icon-imdb"></span>IMDb</a></li>
-                <li><a href="https://justwatch.com" target="_blank"><span class="icon icon-justwatch"></span>JustWatch</a></li>
-                <li><a href="https://ecranlarge.com" target="_blank"><span class="icon icon-ecranlarge"></span>Écran Large</a></li>
-                <li><a href="https://hypnoweb.net" target="_blank"><span class="icon icon-hypnoweb"></span>Hypnoweb</a></li>
-            </ul>
-        </nav>
+        <!-- Bloc 2 : Le menu de gauche -->
+<nav class="side-menu">
+    <h2>Liens Utiles</h2>
+    <ul>
+        <li><a href="https://allocine.fr" target="_blank"><i class="fa-solid fa-film"></i> AlloCiné</a></li>
+        <li><a href="https://imdb.com" target="_blank"><i class="fa-solid fa-star"></i> IMDb</a></li>
+        <li><a href="https://justwatch.com" target="_blank"><i class="fa-solid fa-eye"></i> JustWatch</a></li>
+        <li><a href="https://ecranlarge.com" target="_blank"><i class="fa-solid fa-newspaper"></i> Écran Large</a></li>
+        <li><a href="https://hypnoweb.net" target="_blank"><i class="fa-solid fa-tv"></i> Hypnoweb</a></li>
+    </ul>
+</nav>
+
 
         <!-- Bloc 3 : La partie centrale (la galerie) -->
         <main class="content-area">
